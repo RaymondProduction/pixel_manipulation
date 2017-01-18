@@ -1,0 +1,27 @@
+{
+  "name": "pixel_manipulation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "karma.conf.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaymondProduction/pixel_manipulation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RaymondProduction/pixel_manipulation/issues"
+  },
+  "homepage": "https://github.com/RaymondProduction/pixel_manipulation#readme",
+  "devDependencies": {
+    "jasmine": "^2.5.3",
+    "karma": "^1.4.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-requirejs": "^1.1.0",
+    "requirejs": "^2.3.2"
+  }
+}

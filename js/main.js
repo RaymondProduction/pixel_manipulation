@@ -7,9 +7,27 @@ require(modules, function(jQ, init, load, display, manipulate) {
     picture = load.load(picture, 'sample.jpg')
     jQ(picture.image).load(function() {
       display.show(picture);
-      manipulate.negative(picture);
-      //manipulate.brighter(picture,10);
     });
+  });
+
+  jQ("button").click(function(event) {
+    nameButton = jQuery(this).attr("name");
+    if (nameButton == 'negative') {
+      manipulate.negative(picture);
+    }
+    if (nameButton == 'brighter') {
+      manipulate.brighter(picture, 10);
+    }
+    if (nameButton == "darker") {
+      manipulate.brighter(picture, -10);
+    }
+    if (nameButton == 'original') {
+      picture = load.load(picture, 'sample.jpg');
+      jQ(picture.image).load(function() {
+        display.show(picture);
+      });
+    }
+
   });
 
 });
