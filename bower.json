@@ -1,0 +1,20 @@
+{
+  "name": "pixel_manipulation",
+  "homepage": "https://github.com/RaymondProduction/pixel_manipulation",
+  "authors": [
+    "raymondproduction@ukr.net <raymondproduction@ukr.net>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "canvas-5-polyfill": "^0.1.1"
+  }
+}
