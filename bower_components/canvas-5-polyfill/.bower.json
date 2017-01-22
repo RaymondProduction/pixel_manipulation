@@ -1,0 +1,27 @@
+{
+  "name": "canvas-5-polyfill",
+  "main": "canvas.js",
+  "homepage": "https://github.com/google/canvas-5-polyfill",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt"
+  ],
+  "dependencies": {},
+  "keywords": [
+    "canvas",
+    "polyfill",
+    "html5"
+  ],
+  "license": "BSD",
+  "version": "0.1.1",
+  "_release": "0.1.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.1",
+    "commit": "a8c6bcc70dcc65903ce113924d371e9e5e6aae31"
+  },
+  "_source": "https://github.com/google/canvas-5-polyfill.git",
+  "_target": "^0.1.1",
+  "_originalSource": "canvas-5-polyfill",
+  "_direct": true
+}
