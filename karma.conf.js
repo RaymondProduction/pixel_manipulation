@@ -1,9 +1,18 @@
 module.exports = function(config) {
   config.set({
-    basePath: '',
+    basePath: '', // корневая папка для роботы karma
     frameworks: ['jasmine','requirejs'],
     files: [
+       // указываем все файлы зависимости и test-main для инициализайи
+       // requirejs
+
+       // папка с тестами
       {pattern: 'spec/*Spec.js', included: false},
+       // папка с скриптами, модулями
+      {pattern: 'js/**/*.js', included: false},
+       // папка с модулем bower_components
+      {pattern: 'bower_components/**/*.js', included: false},
+       // директорий с test-main.js
       'js/test-main.js'
     ],
     exclude: [],

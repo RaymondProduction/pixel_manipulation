@@ -1,5 +1,6 @@
 var tests = [];
 for (var file in window.__karma__.files) {
+    // файлы с тестами имеют окончание Spec
     if (/Spec\.js$/.test(file)) {
         tests.push(file);
     }
@@ -8,10 +9,11 @@ for (var file in window.__karma__.files) {
 requirejs.config({
     // Karma serves files from '/base'
     baseUrl: '/base/js',
-
+    // обязательно пути ко всем модулям которые будут в карме
     paths: {
         'jquery': '../js/vendor/jquery-2.2.4.min',
-        'init':'../js/init'
+        'init':'../js/init',
+        'canvas':'../bower_components/canvas-5-polyfill/canvas'
     },
 
     // ask Require.js to load these files (all our tests)

@@ -5,10 +5,10 @@ define(
   ['canvas'],
   function() {
     var initObj = {};
-    initObj.init = function() {
+    initObj.init = function(el) {
       var picture ={};
       picture.image = new Image();
-      var canvas = document.getElementById("myCanvas");
+      var canvas = el;
       picture.canvas = canvas;
       picture.ctx = canvas.getContext("2d");
       return picture;
