@@ -1,22 +1,18 @@
-define(['init'], function(jQ) {
+define(['jquery', 'init', 'load'], function(jQ, init, load) {
 
-    describe('just checking', function() {
+  describe('Test to check initialization', function() {
 
-        it('works for underscore', function() {
-            // just checking that _ works
-            expec1t(3).toEqual(3);
-        });
+    it('works for init', function() {
+      var picture;
+      var el = jQ(' <canvas id="myCanvas"></canvas>');
+      picture = init.init(el);
+      //picture = init.init();
+      //picture = load.load(picture,'sample.jpg');
+
+      expect(picture).toEqual('');
+
 
     });
+  });
 
 });
-/*
-describe('Example of testing with Jasmine and Karma', function () { 
-    it('does not matter how to create an array', function () {
-        // expect([1, 2, 3]).toEqual(new Array(1, 2, 3));
-       //expect(true).toBe(true);
-       expect(5).toEqual(5);
-     });
- });
-
-*/

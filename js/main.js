@@ -3,11 +3,13 @@ require(modules, function(jQ, init, load, display, manipulate) {
   jQ.noConflict();
   var picture = {};
   jQ(document).ready(function() {
-    picture = init.init();
+    picture = init.init(document.getElementById("myCanvas"));
+
     picture = load.load(picture, 'sample.jpg')
     jQ(picture.image).load(function() {
       display.show(picture);
     });
+    console.log(jQ("button").html());
   });
 
   jQ("button").click(function(event) {
