@@ -12,6 +12,7 @@ module.exports = function(config) {
       {pattern: 'js/**/*.js', included: false},
        // папка с модулем bower_components
       {pattern: 'bower_components/**/*.js', included: false},
+      {pattern: 'sample.jpg', watched: false, included: false, served: true, nocache: false},
        // директорий с test-main.js
       'js/test-main.js'
     ],
@@ -24,6 +25,10 @@ module.exports = function(config) {
     autoWatch: true,
     browsers: ['Chrome'],
     singleRun: false,
-    concurrency: Infinity
+    concurrency: Infinity,
+
+    proxies: {
+     "/base/": "http://localhost:9876/base/"
+},
   })
 };

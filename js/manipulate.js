@@ -12,7 +12,6 @@ define(
       var imageData = picture.ctx.getImageData(0, 0, picture.canvas.width, picture.canvas.height);
       var pixels = imageData.data;
       var numPixels = imageData.width * imageData.height;
-
       for (var i = 0; i < numPixels; i++) {
         pixels[i * 4] = 255 - pixels[i * 4]; // Red
         pixels[i * 4 + 1] = 255 - pixels[i * 4 + 1]; // Green
